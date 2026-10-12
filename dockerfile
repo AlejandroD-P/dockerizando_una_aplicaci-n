@@ -8,7 +8,7 @@ RUN apk add --no-cache git
 WORKDIR /app
 
 # Solicitar el código vía HTTPS al repositorio público
-RUN git clone https://github.com/AlejandroD-P/dockerizando_una_aplicaci-n.git
+RUN git clone https://github.com/AlejandroD-P/dockerizando_una_aplicaci-n.git .
 
 # Comando de ejecución
 CMD ["python", "app.py"]
